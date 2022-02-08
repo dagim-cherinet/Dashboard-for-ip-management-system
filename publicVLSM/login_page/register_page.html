@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
+    <title>Registration Page</title>
+  </head>
+  <body>
+    <div class="register_container">
+      <div class="login">
+        <form class="reg__form form form__container" id="reg__form">
+          <h2 class="form-row">Create Account</h2>
+          <input
+            autocomplete="off"
+            type="text"
+            name="username"
+            id="username"
+            class="username form-row form-input"
+            placeholder="username"
+            required
+          />
+          <input
+            autocomplete="off"
+            type="password"
+            name="password"
+            id="password"
+            class="password form-row form-input"
+            placeholder="password"
+            required
+          />
+          <input
+            autocomplete="off"
+            type="password"
+            name="password"
+            id="confirm_password"
+            class="password form-row form-input"
+            placeholder="confirm password"
+            required
+          />
+          <input
+            autocomplete="off"
+            type="text"
+            name="position"
+            id="position"
+            class="password form-row form-input"
+            placeholder="position"
+            required
+          />
+          <button class="btn form-row" type="submit">submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="./register.js"></script>
+  </body>
+</html>
