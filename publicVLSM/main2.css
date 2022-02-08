@@ -478,3 +478,6 @@ form > :last-child {
   font-weight: bold;
   transform: translateX(1.4%);
 }
+.hide-table {
+  display: none;
+}

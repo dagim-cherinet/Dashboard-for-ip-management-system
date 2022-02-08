@@ -53,10 +53,11 @@ const showNetworks = async () => {
 <button type="button" class="delete-btn" data-id="${networkID}">
 <i class="fas fa-trash"></i>delete
 </button>
+<button class= "btn" data-id="${networkID}" onclick = "more_details(this)">more Detail</button>
 </div>
 </div>
 <div class = "network__details">
-   <table class="network__table">
+   <table class="network__table hide-table" id = "${networkID}">
        <thead>
           <tr>
               <th>Network Details</th>
@@ -129,3 +130,13 @@ networksDOM.addEventListener("click", async (e) => {
   }
   loadingDOM.style.display = "none";
 });
+const more_details = (btn) => {
+  const id = btn.dataset.id;
+  // console.log(id);
+  document.getElementById(id).classList.toggle("hide-table");
+  if (btn.innerHTML !== "see less") {
+    btn.innerHTML = "see less";
+  } else {
+    btn.innerHTML = "more detail";
+  }
+};
