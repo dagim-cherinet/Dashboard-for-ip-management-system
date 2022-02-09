@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./about-us.css">
+       <link rel="stylesheet" href="./nav-bar.css">
+  
+    <title>Document</title>
+  </head>
+  <body>
+       <nav class="nav__bar">
+      Ip Address Management System
+      <ul class="nav__list">
+        <a href="./index.html"><li>Home page</li></a>
+        <a href="./about-us.html"><li>About us</li></a>
+        <a href="./contact-us.html"><li>Contact us</li></a>
+      </ul>
+    </nav>
+       <div class="about-us"><h2>CONTACT US<h2></h2></div>
+       <div class="form-container">
+    <form class="reg__form form form__container" id="reg__form">
+    
+      <input
+        autocomplete="off"
+        type="text"
+        name="username"
+        id="username"
+        class="username form-row form-input"
+        placeholder="Name"
+        required
+      />
+      <input
+        autocomplete="off"
+        type="text"
+        name="msg"
+        id="msg"
+        class="msg form-row form-input"
+        placeholder="Enter your message"
+        required
+        maxlength="100"
+      />
+
+      <button class="btn form-row" type="submit">send</button>
+    </form>
+       </div>
+   
+  </body>
+</html>

@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap");
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+/* fonts */
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  /* colors */
+  --primary-100: #e2e0ff;
+  --primary-200: #c1beff;
+  --primary-300: #a29dff;
+  --primary-400: #837dff;
+  --primary-500: #645cff;
+  --primary-600: #504acc;
+  --primary-700: #3c3799;
+  --primary-800: #282566;
+  --primary-900: #141233;
+
+  /* grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+  /* rest of the colors */
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* fonts  */
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Nunito", sans-serif;
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+  /* rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  --borderRadius: 0.25rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1120px;
+  --fixed-width: 600px;
+  /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(126, 79, 79, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.about-us {
+  color: var(--grey-300);
+  font-family: "poppins", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 60vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-700);
+  background-image: url(./images/about-us-image2.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  margin-bottom: 1rem;
+}
+
+.main-container {
+  margin-top: 1rem;
+  padding: 1.2rem;
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: var(--shadow-2);
+  transition: 400ms;
+}
+.main-container:hover {
+  transform: scale(1.02);
+}
+body {
+  font-family: "poppins", sans-serif;
+  font-size: 1.2rem;
+}
+h3,
+h4 {
+  font-family: "poppins", sans-serif;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.container {
+  padding-top: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.each {
+  width: 500%;
+  line-height: 2.1rem;
+  box-shadow: var(--shadow-2);
+  padding: 1rem;
+  transition: 400ms;
+}
+.each:hover {
+  transform: scale(1.02);
+}
+.form-container {
+  width: 50%;
+  margin: 0 auto;
+}
+.reg__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+#msg {
+  height: 200px;
+}
+input[type="text"] {
+  border: none;
+  height: 1.2rem;
+  padding: 1.2rem;
+  outline: none;
+  font-size: 1.2rem;
+  font-family: "poppins", sans-serif;
+  border-radius: 0.25rem;
+  border: 1.5px solid var(--primary-800);
+}
+.btn {
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-family: "poppins", sans-serif;
+  margin-bottom: 3rem;
+  background-color: var(--primary-400);
+  border: none;
+  text-transform: capitalize;
+  border-radius: 0.25rem;
+}
+.btn:hover {
+  background-color: var(--primary-800);
+  color: white;
+}
