@@ -13,14 +13,14 @@ const showNetwork = async () => {
     const {
       data: { network },
     } = await axios.get(`/api/v1/networks/${id}`);
-    const { _id: networkID, completed, network_name } = network;
+    const { _id: networkID, network_name } = network;
 
     networkIDDOM.textContent = networkID;
     networkNameDOM.value = network_name;
     tempName = network_name;
-    if (completed) {
-      networkCompletedDOM.checked = true;
-    }
+    // if (completed) {
+    //   networkCompletedDOM.checked = true;
+    // }
   } catch (error) {
     console.log(error);
   }
@@ -33,13 +33,12 @@ editFormDOM.addEventListener("submit", async (e) => {
   e.preventDefault();
   try {
     const networkName = networkNameDOM.value;
-    const networkCompleted = networkCompletedDOM.checked;
+    //const networkCompleted = networkCompletedDOM.checked;
 
     const {
       data: { network },
     } = await axios.patch(`/api/v1/networks/${id}`, {
       network_name: networkName,
-      completed: networkCompleted,
     });
 
     const { _id: networkID, completed, network_name } = network;
