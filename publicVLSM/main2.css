@@ -482,7 +482,8 @@ form > :last-child {
 .hide-table {
   display: none;
 }
-#dashboard-h2 {
+#dashboard-h2,
+.dashboard-h2 {
   font-size: 1.4rem;
   font-weight: bold;
 }
